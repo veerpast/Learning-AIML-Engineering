@@ -1,0 +1,31 @@
+{
+  "python-envs.defaultEnvManager": "ms-python.python:venv",
+  "python-envs.defaultPackageManager": "ms-python.python:pip",
+  "python-envs.workspaceSearchPaths": [
+    "FaceDetection/.venv",
+    "Python/python-for-ai/.venv"
+  ],
+  "python-envs.pythonProjects": [
+    {
+      "path": "Python/python-for-ai",
+      "envManager": "ms-python.python:venv",
+      "packageManager": "ms-python.python:pip"
+    },
+    {
+      "path": "FaceDetection",
+      "envManager": "ms-python.python:venv",
+      "packageManager": "ms-python.python:pip"
+    }
+  ],
+  "python.analysis.usePerProjectEnvironments": true,
+  "python.analysis.extraPathsForPythonProjects": {
+    "FaceDetection": [
+      "FaceDetection/backend"
+    ]
+  },
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.venv": true,
+    "**/node_modules": true
+  }
+}

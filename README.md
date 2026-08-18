@@ -39,6 +39,15 @@ This roadmap describes my intended progression, not a claim that every area has 
 
 Local environments, installed dependencies, generated builds, model weights, caches, and manual test inputs are intentionally excluded from version control.
 
+### Python Environments
+
+The Python exercises and face-detection project use separate local environments so their Python versions and dependencies do not conflict:
+
+- `Python/python-for-ai/.venv` belongs to the Python learning workspace.
+- `FaceDetection/.venv` belongs to the face-detection project.
+
+When the repository root is opened in VS Code, the workspace settings register both folders as independent Python projects. When either folder is opened by itself, its local settings select that folder's `.venv`. Virtual-environment contents remain local and are never committed.
+
 ## Engineering Practices
 
 - Keep commits small and tied to genuine daily progress.
