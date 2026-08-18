@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: veilsight-api
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements-full.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: VEILSIGHT_ALLOWED_ORIGINS
+        sync: false
+      - key: VEILSIGHT_YOLO_MODEL
+        value: /opt/render/project/src/models/yolov11n-face.pt

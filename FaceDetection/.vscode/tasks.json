@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "VeilSight: start demo",
+      "type": "shell",
+      "command": "make demo",
+      "problemMatcher": []
+    },
+    {
+      "label": "VeilSight: backend tests",
+      "type": "shell",
+      "command": "PYTHONPATH=backend .venv/bin/python -m unittest discover -s backend/tests -v",
+      "problemMatcher": []
+    }
+  ]
+}

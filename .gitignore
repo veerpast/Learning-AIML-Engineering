@@ -1,0 +1,103 @@
+# Local environments and secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
+*.cer
+credentials.json
+service-account*.json
+*credentials*
+*secrets*
+*token*
+
+# Python caches, test output, and packaging
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+build/
+dist/
+*.egg-info/
+*.egg
+wheels/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# JavaScript dependencies and generated output
+node_modules/
+.vite/
+.vite-temp/
+.next/
+coverage/
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo
+*~
+.vscode/*.log
+.history/
+
+# Logs, caches, temporary files, and generated output
+*.log
+logs/
+.cache/
+cache/
+tmp/
+temp/
+outputs/
+output/
+artifacts/
+generated/
+reports/generated/
+
+# Model weights and serialized models
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+*.bin
+*.tflite
+*.h5
+*.hdf5
+*.joblib
+*.pkl
+*.pickle
+
+# Local datasets and experiment tracking
+data/
+datasets/
+dataset/
+*.parquet
+*.feather
+*.arrow
+*.npy
+*.npz
+*.csv.gz
+mlruns/
+wandb/
+
+# Local face-detection inputs used for manual testing
+/FaceDetection/demo*.jpg
